@@ -62,7 +62,7 @@ class EmailService {
 
     constructor() {
         this.fromName = process.env.SMTP_FROM_NAME || 'Pix ERP';
-        this.fromEmail = process.env.SMTP_FROM_EMAIL || process.env.RESEND_FROM_EMAIL || process.env.ZOHO_EMAIL_USER || 'no-reply@pixerp.app';
+        this.fromEmail = process.env.SMTP_FROM_EMAIL || process.env.RESEND_FROM_EMAIL || process.env.ZOHO_EMAIL_USER || 'no-reply@fixerp.app';
         console.log('📧 EmailService initialized: using Resend if available');
     }
 

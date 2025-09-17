@@ -280,24 +280,24 @@ class NotificationService {
         try {
             const success = await emailService.sendEmail({
                 to: [to],
-                subject: '✅ Test de Configuración de Email - Pix ERP',
+                subject: '✅ Test de Configuración de Email - Fix ERP',
                 html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: #2563eb; color: white; padding: 20px; text-align: center;">
               <h1>✅ Configuración de Email Exitosa</h1>
             </div>
             <div style="padding: 20px; background: #f8fafc;">
-              <p>¡Felicitaciones! La configuración de email para Pix ERP está funcionando correctamente.</p>
+              <p>¡Felicitaciones! La configuración de email para Fix ERP está funcionando correctamente.</p>
               <p>Este es un email de prueba enviado desde tu sistema de notificaciones.</p>
               <p><strong>Fecha:</strong> ${new Date().toLocaleString()}</p>
               <p><strong>Servidor SMTP:</strong> ${process.env.SMTP_HOST}</p>
             </div>
             <div style="padding: 20px; text-align: center; color: #64748b; font-size: 12px;">
-              <p>© 2025 Pix ERP - Sistema de Gestión para la Construcción</p>
+              <p>© 2025 Fix ERP - Sistema de Gestión para el Mantenimiento</p>
             </div>
           </div>
         `,
-                text: 'Configuración de email exitosa - Pix ERP'
+                text: 'Configuración de email exitosa - Fix ERP'
             });
 
             // Log del test

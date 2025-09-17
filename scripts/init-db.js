@@ -3,7 +3,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 
-console.log('🗄️ Inicializando base de datos Pix...');
+console.log('🗄️ Inicializando base de datos Fix...');
 
 // Función para ejecutar comandos con reintentos
 async function executeWithRetry(command, description, maxRetries = 5) {

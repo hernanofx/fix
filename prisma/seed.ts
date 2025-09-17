@@ -9,17 +9,17 @@ async function main() {
     // Crear organizaciones de ejemplo
     const organizations = await Promise.all([
         prisma.organization.upsert({
-            where: { slug: 'pix-construcciones' },
+            where: { slug: 'fix-mantenimiento' },
             update: {},
             create: {
-                name: 'PIX Construcciones',
-                slug: 'pix-construcciones',
-                email: 'info@pix.app',
+                name: 'FIX Mantenimiento',
+                slug: 'fix-mantenimiento',
+                email: 'info@fix.app',
                 phone: '+54 11 9 1234 5678',
                 address: 'Av. Boyaca 123',
                 city: 'Buenos Aires',
                 country: 'Argentina',
-                website: 'https://pixerp.app',
+                website: 'https://fixerp.app',
                 description: 'Empresa líder en software para construcción',
                 plan: 'PROFESSIONAL',
                 status: 'ACTIVE'
@@ -33,13 +33,13 @@ async function main() {
     const hashedPassword = await bcrypt.hash('demo123', 12)
 
     const users = await Promise.all([
-        // Admin de PIX CONSTRUCCIONES
+        // Admin de FIX MANTENIMIENTO
         prisma.user.upsert({
-            where: { email: 'info@pixerp.app' },
+            where: { email: 'info@fixerp.app' },
             update: {},
             create: {
                 name: 'Info',
-                email: 'info@pixerp.app',
+                email: 'info@fixerp.app',
                 password: hashedPassword,
                 role: 'ADMIN',
                 status: 'ACTIVE',
@@ -50,11 +50,11 @@ async function main() {
         }),
         // Admin Matías
         prisma.user.upsert({
-            where: { email: 'matias@pixerp.app' },
+            where: { email: 'matias@fixerp.app' },
             update: {},
             create: {
                 name: 'Matías',
-                email: 'matias@pixerp.app',
+                email: 'matias@fixerp.app',
                 password: hashedPassword,
                 role: 'ADMIN',
                 status: 'ACTIVE',
@@ -65,11 +65,11 @@ async function main() {
         }),
         // Admin Hernan
         prisma.user.upsert({
-            where: { email: 'hernan@pixerp.app' },
+            where: { email: 'hernan@fixerp.app' },
             update: {},
             create: {
                 name: 'Hernan',
-                email: 'hernan@pixerp.app',
+                email: 'hernan@fixerp.app',
                 password: hashedPassword,
                 role: 'ADMIN',
                 status: 'ACTIVE',
@@ -80,11 +80,11 @@ async function main() {
         }),
         // Admin JF
         prisma.user.upsert({
-            where: { email: 'jf@pixerp.app' },
+            where: { email: 'jf@fixerp.app' },
             update: {},
             create: {
                 name: 'JF',
-                email: 'jf@pixerp.app',
+                email: 'jf@fixerp.app',
                 password: hashedPassword,
                 role: 'ADMIN',
                 status: 'ACTIVE',
@@ -109,8 +109,8 @@ async function main() {
         const projects = await Promise.all([
             prisma.project.create({
                 data: {
-                    name: 'PIX Administracion',
-                    description: 'Proyecto de administracion de pix erp, interno',
+                    name: 'FIX Administracion',
+                    description: 'Proyecto de administracion de fix erp, interno',
                     code: 'PRJ-001',
                     status: 'PLANNING',
                     priority: 'MEDIUM',

@@ -29,7 +29,7 @@ export default function Home() {
                         <div className="flex items-center">
                             <Image
                                 src="/favicon.png"
-                                alt="Pix Logo"
+                                alt="Fix Logo"
                                 width={48}
                                 height={48}
                                 className="h-12 w-auto bg-transparent"
@@ -37,7 +37,7 @@ export default function Home() {
                                 priority
                             />
                             <div className="ml-3">
-                                <span className="text-sm text-gray-500">Gestión Inteligente de Construcción</span>
+                                <span className="text-sm text-gray-500">Gestión Inteligente de Mantenimiento</span>
                             </div>
                         </div>
                         <div className="flex items-center space-x-4">
@@ -60,17 +60,17 @@ export default function Home() {
                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
-                            Software #1 en Gestión de Construcción
+                            Software #1 en Gestión de Mantenimiento
                         </div>
                         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
                             Toma el Control de
                             <span className="block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                                tus Proyectos
+                                tus Servicios
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                            Pix es más que software: es tu aliado humano en la gestión de construcción.
-                            Diseñado por constructores para constructores, con el foco en lo que realmente importa:
+                            Fix es más que software: es tu aliado humano en la gestión de mantenimiento.
+                            Diseñado por profesionales del mantenimiento para profesionales, con el foco en lo que realmente importa:
                             <strong className="text-gray-900">tu control, tus decisiones, tus resultados</strong>.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -137,7 +137,7 @@ export default function Home() {
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-purple-600 transition-colors duration-300">Eficiencia Humana</h3>
                             <p className="text-gray-600">
-                                Automatiza lo repetitivo para que te enfoques en lo que realmente importa: construir mejor.
+                                Automatiza lo repetitivo para que te enfoques en lo que realmente importa: mantener mejor.
                             </p>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ export default function Home() {
                             Módulos Completos para tu Gestión Integral
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Desde la planificación hasta la entrega, Pix cubre todos los aspectos de tu negocio constructivo
+                            Desde la planificación hasta la entrega, Fix cubre todos los aspectos de tu negocio de mantenimiento
                             con herramientas especializadas que se adaptan a tus necesidades reales.
                         </p>
                     </div>
@@ -194,12 +194,12 @@ export default function Home() {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors duration-300">Gestión de Proyectos</h3>
                             <p className="text-gray-600 mb-4">
-                                Control total de tus obras con seguimiento detallado de etapas, recursos y cronogramas.
+                                Control total de tus servicios con seguimiento detallado de tareas, recursos y cronogramas.
                             </p>
                             <ul className="text-sm text-gray-600 space-y-2">
                                 <li className="flex items-center group-hover:text-green-600 transition-colors duration-300">
                                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                                    Planificación avanzada
+                                    Programación preventiva
                                 </li>
                                 <li className="flex items-center group-hover:text-green-600 transition-colors duration-300">
                                     <TrendingUp className="w-4 h-4 text-green-500 mr-2" />
@@ -207,7 +207,7 @@ export default function Home() {
                                 </li>
                                 <li className="flex items-center group-hover:text-green-600 transition-colors duration-300">
                                     <Target className="w-4 h-4 text-green-500 mr-2" />
-                                    Seguimiento de progreso
+                                    Monitoreo de cumplimiento
                                 </li>
                             </ul>
                         </div>
@@ -337,20 +337,20 @@ export default function Home() {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors duration-300">Planificación e Inspecciones</h3>
                             <p className="text-gray-600 mb-4">
-                                Herramientas avanzadas para planificar cronogramas, gestionar planos y realizar inspecciones de calidad.
+                                Herramientas avanzadas para mantenimiento preventivo, gestión de equipos y control de calidad.
                             </p>
                             <ul className="text-sm text-gray-600 space-y-2">
                                 <li className="flex items-center group-hover:text-indigo-600 transition-colors duration-300">
                                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                                    Diagramas de Gantt
+                                    Mantenimiento preventivo
                                 </li>
                                 <li className="flex items-center group-hover:text-indigo-600 transition-colors duration-300">
                                     <TrendingUp className="w-4 h-4 text-green-500 mr-2" />
-                                    Gestión de planos
+                                    Gestión de equipos
                                 </li>
                                 <li className="flex items-center group-hover:text-indigo-600 transition-colors duration-300">
                                     <Target className="w-4 h-4 text-green-500 mr-2" />
-                                    Inspecciones programadas
+                                    Control de calidad
                                 </li>
                             </ul>
                         </div>
@@ -385,13 +385,13 @@ export default function Home() {
                         {/* Centro de Soporte */}
                         <div className="bg-gradient-to-br from-gray-50 to-slate-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-500 group hover:-translate-y-2 cursor-pointer"
                             data-tooltip-id="soporte-tooltip"
-                            data-tooltip-content="Centro completo de soporte con documentación técnica, tutoriales, soporte 24/7, comunidad de usuarios y recursos para maximizar el uso de Pix.">
+                            data-tooltip-content="Centro completo de soporte con documentación técnica, tutoriales, soporte 24/7, comunidad de usuarios y recursos para maximizar el uso de Fix.">
                             <div className="bg-gray-500 p-3 rounded-xl w-fit mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                                 <HelpCircle className="h-8 w-8 text-white" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition-colors duration-300">Centro de Soporte</h3>
                             <p className="text-gray-600 mb-4">
-                                Base de conocimientos completa, soporte técnico y recursos para maximizar tu experiencia con Pix.
+                                Base de conocimientos completa, soporte técnico y recursos para maximizar tu experiencia con Fix.
                             </p>
                             <ul className="text-sm text-gray-600 space-y-2">
                                 <li className="flex items-center group-hover:text-gray-600 transition-colors duration-300">
@@ -420,7 +420,7 @@ export default function Home() {
                             Lo que dicen nuestros usuarios
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Constructores como tú que han transformado su gestión con Pix
+                            Empresas de mantenimiento como tú que han transformado su gestión con Fix
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -433,12 +433,12 @@ export default function Home() {
                                 </div>
                                 <div className="ml-3">
                                     <p className="font-semibold text-gray-900">Carlos Mendoza</p>
-                                    <p className="text-sm text-gray-600">Director de Construcción</p>
+                                    <p className="text-sm text-gray-600">Director de Mantenimiento</p>
                                 </div>
                             </div>
                             <p className="text-gray-600 italic">
-                                "Pix nos dio el control que necesitábamos. Ya no dependemos de hojas de cálculo desactualizadas.
-                                Ahora tenemos visibilidad real de nuestros proyectos."
+                                "Fix nos dio el control que necesitábamos. Ya no dependemos de hojas de cálculo desactualizadas.
+                                Ahora tenemos visibilidad real de nuestros servicios de mantenimiento."
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -450,12 +450,12 @@ export default function Home() {
                                 </div>
                                 <div className="ml-3">
                                     <p className="font-semibold text-gray-900">Ana García</p>
-                                    <p className="text-sm text-gray-600">Gerente de Proyectos</p>
+                                    <p className="text-sm text-gray-600">Gerente de Operaciones</p>
                                 </div>
                             </div>
                             <p className="text-gray-600 italic">
                                 "La plataforma es intuitiva y se adapta a cómo trabajamos. Finalmente tenemos una herramienta
-                                que entiende las necesidades reales de la construcción."
+                                que entiende las necesidades reales del mantenimiento."
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -467,12 +467,12 @@ export default function Home() {
                                 </div>
                                 <div className="ml-3">
                                     <p className="font-semibold text-gray-900">Roberto Silva</p>
-                                    <p className="text-sm text-gray-600">Propietario Empresa</p>
+                                    <p className="text-sm text-gray-600">Propietario Empresa de Mantenimiento</p>
                                 </div>
                             </div>
                             <p className="text-gray-600 italic">
-                                "Desde que usamos Pix, nuestros márgenes han mejorado un 25%. El control financiero
-                                y la eficiencia en proyectos es incomparable."
+                                "Desde que usamos Fix, nuestros márgenes han mejorado un 25%. El control financiero
+                                y la eficiencia en servicios es incomparable."
                             </p>
                         </div>
                     </div>
@@ -485,7 +485,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div className="text-center hover:scale-105 transition-transform duration-300">
                             <div className="text-4xl font-bold text-blue-600 mb-2 hover:text-blue-700 transition-colors duration-300">500+</div>
-                            <div className="text-gray-600">Empresas confían en Pix</div>
+                            <div className="text-gray-600">Empresas confían en Fix</div>
                         </div>
                         <div className="text-center hover:scale-105 transition-transform duration-300">
                             <div className="text-4xl font-bold text-green-600 mb-2 hover:text-green-700 transition-colors duration-300">25%</div>
@@ -493,7 +493,7 @@ export default function Home() {
                         </div>
                         <div className="text-center hover:scale-105 transition-transform duration-300">
                             <div className="text-4xl font-bold text-purple-600 mb-2 hover:text-purple-700 transition-colors duration-300">10k+</div>
-                            <div className="text-gray-600">Proyectos gestionados</div>
+                            <div className="text-gray-600">Servicios gestionados</div>
                         </div>
                         <div className="text-center hover:scale-105 transition-transform duration-300">
                             <div className="text-4xl font-bold text-orange-600 mb-2 hover:text-orange-700 transition-colors duration-300">24/7</div>
@@ -507,11 +507,11 @@ export default function Home() {
             <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-600">
                 <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-white mb-6">
-                        ¿Listo para recuperar el control de tus proyectos?
+                        ¿Listo para recuperar el control de tus servicios?
                     </h2>
                     <p className="text-xl text-blue-100 mb-8">
-                        Únete a cientos de constructores que ya han transformado su forma de trabajar.
-                        Pix no es solo software, es el aliado que necesitas para construir mejor.
+                        Únete a cientos de empresas de mantenimiento que ya han transformado su forma de trabajar.
+                        Fix no es solo software, es el aliado que necesitas para mantener mejor.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -538,7 +538,7 @@ export default function Home() {
                             <div className="flex items-center mb-4">
                                 <Image
                                     src="/favicon.png"
-                                    alt="Pix Logo"
+                                    alt="Fix Logo"
                                     width={32}
                                     height={32}
                                     className="h-8 w-auto bg-transparent"
@@ -546,7 +546,7 @@ export default function Home() {
                                 />
                             </div>
                             <p className="text-gray-400">
-                                La plataforma integral para la gestión inteligente de proyectos de construcción.
+                                La plataforma integral para la gestión inteligente de servicios de mantenimiento.
                             </p>
                         </div>
                         <div>
@@ -578,7 +578,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                        <p>&copy; 2025 Pix. Todos los derechos reservados.</p>
+                        <p>&copy; 2025 Fix. Todos los derechos reservados.</p>
                     </div>
                 </div>
             </footer>

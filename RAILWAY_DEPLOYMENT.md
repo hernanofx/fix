@@ -142,7 +142,7 @@ RUN_SEED=false
 ### Contacto de Soporte
 - **Railway Support:** Para problemas específicos de la plataforma
 - **PostgreSQL Docs:** Para configuración de conexión
-- **Proyecto Pix:** Para problemas específicos de la aplicación
+- **Proyecto Fix:** Para problemas específicos de la aplicación
 
 ## ✅ Checklist de Despliegue
 

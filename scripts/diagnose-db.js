@@ -3,7 +3,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 
-console.log('🔍 Diagnóstico de base de datos Pix...');
+console.log('🔍 Diagnóstico de base de datos Fix...');
 
 // Función para ejecutar comandos de forma segura
 function executeCommand(command, description) {

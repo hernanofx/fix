@@ -3,7 +3,7 @@
 const { spawn, execSync } = require('child_process');
 const fs = require('fs');
 
-console.log('🚀 Iniciando Pix en modo producción...');
+console.log('🚀 Iniciando Fix en modo producción...');
 
 // Función para verificar si la base de datos está disponible
 async function checkDatabaseConnection(maxRetries = 10) {

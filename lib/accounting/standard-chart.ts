@@ -86,7 +86,7 @@ export const STANDARD_CHART_OF_ACCOUNTS = [
 export const RUBRO_TO_ACCOUNT_MAPPING: Record<string, { income: string; expense: string }> = {
     // Materiales
     'MATERIALES': { income: '4.1.03', expense: '5.1.01' },
-    'MATERIALES_CONSTRUCCION': { income: '4.1.03', expense: '5.1.01' },
+    'MATERIALES_MANTENIMIENTO': { income: '4.1.03', expense: '5.1.01' },
 
     // Mano de obra
     'MANO_OBRA': { income: '4.1.01', expense: '5.1.02' },

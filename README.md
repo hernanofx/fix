@@ -1,4 +1,4 @@
-# Pix - Sistema Integral de Gestión para la Construcción
+# Fix - Sistema Integral de Gestión para la Construcción
 
 Una plataforma SaaS completa y moderna para la gestión integral de empresas constructoras, con arquitectura multi-tenant avanzada, PostgreSQL en Railway y sistema de facturación Bills revolucionario.
 
@@ -252,7 +252,7 @@ Una plataforma SaaS completa y moderna para la gestión integral de empresas con
 ### 2. Clona el repositorio
 ```bash
 git clone [url-del-repositorio]
-cd pix-construction
+cd fix-construction
 ```
 
 ### 3. Instala las dependencias
@@ -277,7 +277,7 @@ GOOGLE_ANALYTICS_CLIENT_EMAIL="your-service-account@project.iam.gserviceaccount.
 GOOGLE_ANALYTICS_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n"
 
 # Credenciales de demo (para desarrollo)
-DEMO_EMAIL="admin@pixdemo.com"
+DEMO_EMAIL="admin@fixdemo.com"
 DEMO_PASSWORD="demo123"
 ```
 
@@ -301,7 +301,7 @@ npm run dev
 ### 7. Accede a la aplicación
 - Abre [http://localhost:3000](http://localhost:3000) en tu navegador
 - **Credenciales de demo**:
-  - Email: `admin@pixdemo.com`
+  - Email: `admin@fixdemo.com`
   - Password: `demo123`
 
 ## 🚀 Despliegue en Producción
@@ -482,7 +482,7 @@ npm run test:analytics
 ## 📁 Estructura del Proyecto
 
 ```
-pix/
+fix/
 ├── app/                           # Next.js App Router (14.2.3)
 │   ├── api/                       # API Routes (40+ endpoints)
 │   │   ├── assignments/           # Asignaciones de empleados
@@ -722,10 +722,10 @@ Este proyecto está diseñado para ser escalable y venderse como SaaS en el futu
 ## 📞 Soporte y Contacto
 
 Para soporte técnico, preguntas o consultas comerciales:
-- **Email**: soporte@pix-construction.com
-- **Documentación**: [docs.pix-construction.com](https://docs.pix-construction.com)
-- **Demo**: [demo.pix-construction.com](https://demo.pix-construction.com)
-- **Credenciales Demo**: admin@pixdemo.com / demo123
+- **Email**: soporte@fix-construction.com
+- **Documentación**: [docs.fix-construction.com](https://docs.fix-construction.com)
+- **Demo**: [demo.fix-construction.com](https://demo.fix-construction.com)
+- **Credenciales Demo**: admin@fixdemo.com / demo123
 
 ### 📊 Estadísticas del Proyecto
 
@@ -777,11 +777,11 @@ Para soporte técnico, preguntas o consultas comerciales:
 
 ---
 
-**Pix - Sistema Integral de Gestión para la Construcción**
+**Fix - Sistema Integral de Gestión para la Construcción**
 
 🚀 **Estado Actual: PRODUCCIÓN LISTA** - Plataforma SaaS completa y revolucionaria para la transformación digital de empresas constructoras.
 
-### 🎯 Lo que hace único a Pix:
+### 🎯 Lo que hace único a Fix:
 
 - **🏗️ Arquitectura Multi-Tenant Avanzada**: Aislamiento completo con 35+ modelos interconectados
 - **💰 Sistema Bills Revolucionario**: Reemplaza facturas tradicionales con funcionalidad superior
@@ -896,6 +896,6 @@ Si el deploy falla:
 
 **¿Listo para revolucionar tu empresa constructora?**
 
-[📧 Contacto](mailto:soporte@pix.com) • [🌐 Demo](https://demo.pix.com) • [📚 Documentación](https://docs.pix.com)
+[📧 Contacto](mailto:soporte@fix.com) • [🌐 Demo](https://demo.fix.com) • [📚 Documentación](https://docs.fix.com)
 
-**Credenciales Demo**: `admin@pixdemo.com` / `demo123`
+**Credenciales Demo**: `admin@fixdemo.com` / `demo123`

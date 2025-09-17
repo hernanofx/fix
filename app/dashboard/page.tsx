@@ -405,7 +405,7 @@ function GeneralTab({ data }: { data: DashboardData }) {
                                 <h3 className="text-xl font-bold text-foreground">Asignaciones</h3>
                             </div>
                             <Link
-                                href="https://pixerp.app/assignments"
+                                href="https://fixerp.app/assignments"
                                 className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
                             >
                                 Ver todas
@@ -461,7 +461,7 @@ function GeneralTab({ data }: { data: DashboardData }) {
                                 <h3 className="text-xl font-bold text-foreground">Tareas</h3>
                             </div>
                             <Link
-                                href="https://pixerp.app/planning"
+                                href="https://fixerp.app/planning"
                                 className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
                             >
                                 Ver todas

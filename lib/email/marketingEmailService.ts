@@ -50,8 +50,8 @@ class MarketingEmailService {
     private fromEmail: string;
 
     constructor() {
-        this.fromName = process.env.SMTP_FROM_NAME || 'Pix ERP';
-        this.fromEmail = process.env.SMTP_FROM_EMAIL || 'info@pixerp.app';
+        this.fromName = process.env.SMTP_FROM_NAME || 'Fix ERP';
+        this.fromEmail = process.env.SMTP_FROM_EMAIL || 'info@fixerp.app';
     }
 
     // Plantillas de email predefinidas
@@ -60,7 +60,7 @@ class MarketingEmailService {
             id: 'intro-basic',
             name: 'Introducción Básica',
             type: MarketingEmailType.INTRODUCTION,
-            subject: 'Conoce Pix - Tu Socio en Construcción',
+            subject: 'Conoce Fix - Tu Socio en Mantenimiento',
             category: 'Introducción',
             isActive: true,
             variables: ['prospectName', 'companyName', 'contactName'],
@@ -70,7 +70,7 @@ class MarketingEmailService {
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Conoce Pix Construcción</title>
+                                        <title>Conoce Fix Mantenimiento</title>
                     <style>
                         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
                         .container { max-width: 600px; margin: 0 auto; background: white; }
@@ -92,17 +92,17 @@ class MarketingEmailService {
                 <body>
                     <div class="container">
                         <div class="header">
-                            <div class="logo">PIX CONSTRUCCIÓN</div>
+                                                        <div class="logo">FIX MANTENIMIENTO</div>
                             <div class="tagline">Construyendo el futuro de tu proyecto</div>
                         </div>
 
                         <div class="content">
                             <h1 style="color: #1e3a8a; margin-bottom: 20px;">¡Hola {{prospectName}}!</h1>
 
-                            <p>Somos <strong>Pix Construcción</strong>, una empresa especializada en soluciones integrales para el sector de la construcción. Con más de 10 años de experiencia, hemos acompañado a empresas como la tuya en la realización de proyectos exitosos.</p>
+                            <p>Somos <strong>Fix Mantenimiento</strong>, una empresa especializada en soluciones integrales para el sector del mantenimiento. Con más de 10 años de experiencia, hemos acompañado a empresas como la tuya en la realización de servicios exitosos.</p>
 
                             <div class="highlight">
-                                <h3 style="margin-top: 0; color: #1e3a8a;">¿Por qué elegir Pix Construcción?</h3>
+                                <h3 style="margin-top: 0; color: #1e3a8a;">¿Por qué elegir Fix Mantenimiento?</h3>
                                 <ul style="margin: 0; padding-left: 20px;">
                                     <li>✅ Equipo técnico altamente calificado</li>
                                     <li>✅ Tecnología de vanguardia en gestión de proyectos</li>
@@ -137,13 +137,13 @@ class MarketingEmailService {
 
                             <p style="margin-top: 30px;">También puedes contactarnos directamente:</p>
                             <p><strong>📞 Teléfono:</strong> +56 9 1234 5678<br>
-                            <strong>📧 Email:</strong> contacto@pixconstruccion.com<br>
-                            <strong>🌐 Web:</strong> www.pixconstruccion.com</p>
+                            <strong>📧 Email:</strong> contacto@fixmantenimiento.com<br>
+                            <strong>🌐 Web:</strong> www.fixmantenimiento.com</p>
                         </div>
 
                         <div class="footer">
-                            <p><strong>Pix Construcción</strong></p>
-                            <p>Construyendo sueños, entregando resultados</p>
+                            <p><strong>Fix Mantenimiento</strong></p>
+                            <p>Manteniendo equipos, entregando resultados</p>
                             <div class="social-links">
                                 <a href="#">📘 Facebook</a>
                                 <a href="#">📷 Instagram</a>
@@ -159,33 +159,34 @@ class MarketingEmailService {
                 </html>
             `,
             textContent: `
-PIX CONSTRUCCIÓN
-Construyendo el futuro de tu proyecto
+FIX MANTENIMIENTO
+Manteniendo el futuro de tu operación
 
 ¡Hola {{prospectName}}!
 
-Somos Pix Construcción, una empresa especializada en soluciones integrales para el sector de la construcción. Con más de 10 años de experiencia, hemos acompañado a empresas como la tuya en la realización de proyectos exitosos.
+Somos Fix Mantenimiento, una empresa especializada en soluciones integrales para el sector del mantenimiento. Con más de 10 años de experiencia, hemos acompañado a empresas como la tuya en la realización de servicios exitosos.
 
-¿POR QUÉ ELEGIR PIX CONSTRUCCIÓN?
+¿POR QUÉ ELEGIR FIX MANTENIMIENTO?
 • Equipo técnico altamente calificado
-• Tecnología de vanguardia en gestión de proyectos
+• Tecnología de vanguardia en gestión de servicios
 • Compromiso con plazos y presupuestos
 • Atención personalizada y seguimiento continuo
 
 NUESTROS SERVICIOS:
-• Construcción: Soluciones completas en edificación residencial, comercial e industrial
-• Gestión de Proyectos: Control total de presupuestos, tiempos y calidad
+• Mantenimiento Preventivo: Programación y ejecución de mantenimientos preventivos
+• Mantenimiento Correctivo: Soluciones rápidas para reparaciones urgentes
+• Gestión de Equipos: Control total de activos, tiempos y calidad
 • Mantenimiento: Servicios de mantenimiento preventivo y correctivo
 
-Nos gustaría conocer más sobre tu proyecto y cómo podemos ayudarte a materializarlo. ¿Te parece si agendamos una reunión para conversar sobre tus necesidades específicas?
+Nos gustaría conocer más sobre tu operación y cómo podemos ayudarte a optimizarla. ¿Te parece si agendamos una reunión para conversar sobre tus necesidades específicas?
 
 CONTACTO:
 Teléfono: +56 9 1234 5678
-Email: contacto@pixconstruccion.com
-Web: www.pixconstruccion.com
+Email: contacto@fixmantenimiento.com
+Web: www.fixmantenimiento.com
 
-Pix Construcción
-Construyendo sueños, entregando resultados
+Fix Mantenimiento
+Manteniendo equipos, entregando resultados
 
 Este email fue enviado por interés en nuestros servicios.
 Si no deseas recibir más comunicaciones, puedes darte de baja respondiendo a este email con "BAJA".
@@ -205,7 +206,7 @@ Si no deseas recibir más comunicaciones, puedes darte de baja respondiendo a es
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Seguimiento - Tu Proyecto</title>
+                    <title>Seguimiento - Tu Servicio</title>
                     <style>
                         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
                         .container { max-width: 600px; margin: 0 auto; background: white; }
@@ -223,14 +224,14 @@ Si no deseas recibir más comunicaciones, puedes darte de baja respondiendo a es
                 <body>
                     <div class="container">
                         <div class="header">
-                            <h1 style="margin: 0; font-size: 24px;">Seguimiento de tu Proyecto</h1>
+                            <h1 style="margin: 0; font-size: 24px;">Seguimiento de tu Servicio</h1>
                             <p style="margin: 10px 0 0 0; opacity: 0.9;">Hace {{daysSinceContact}} días que nos contactaste</p>
                         </div>
 
                         <div class="content">
                             <h2 style="color: #059669;">¡Hola {{prospectName}}!</h2>
 
-                            <p>Espero que este email te encuentre bien. Hace {{daysSinceContact}} días nos contactaste para conocer más sobre nuestros servicios de construcción, y quería hacer un seguimiento personalizado.</p>
+                            <p>Espero que este email te encuentre bien. Hace {{daysSinceContact}} días nos contactaste para conocer más sobre nuestros servicios de mantenimiento, y quería hacer un seguimiento personalizado.</p>
 
                             <div class="reminder-box">
                                 <h3 style="margin-top: 0; color: #059669;">📅 Recordatorio de nuestra conversación</h3>
@@ -270,24 +271,24 @@ Si no deseas recibir más comunicaciones, puedes darte de baja respondiendo a es
                             <ul>
                                 <li>📞 Una llamada de 15 minutos para resolver tus dudas</li>
                                 <li>📧 Enviar información más detallada sobre casos similares</li>
-                                <li>🏢 Organizar una visita a una de nuestras obras en ejecución</li>
+                                <li>� Organizar una visita a una de nuestras operaciones en ejecución</li>
                             </ul>
 
                             <div style="text-align: center;">
                                 <a href="#" class="cta-button">Agendar Llamada</a>
                             </div>
 
-                            <p style="margin-top: 30px;">Quedo atento a tus comentarios. ¡Será un placer poder ayudarte con tu proyecto!</p>
+                            <p style="margin-top: 30px;">Quedo atento a tus comentarios. ¡Será un placer poder ayudarte con tu servicio!</p>
 
                             <p><strong>Saludos cordiales,</strong><br>
                             [Tu Nombre]<br>
                             Ejecutivo de Ventas<br>
-                            Pix Construcción</p>
+                            Fix Mantenimiento</p>
                         </div>
 
                         <div class="footer">
-                            <p><strong>Pix Construcción</strong></p>
-                            <p>Construyendo sueños, entregando resultados</p>
+                            <p><strong>Fix Mantenimiento</strong></p>
+                            <p>Manteniendo equipos, entregando resultados</p>
                             <p style="font-size: 12px; opacity: 0.8;">
                                 Este es un seguimiento personalizado de tu consulta.<br>
                                 Si ya no estás interesado, puedes <a href="#" style="color: white;">darte de baja aquí</a>.
@@ -298,14 +299,14 @@ Si no deseas recibir más comunicaciones, puedes darte de baja respondiendo a es
                 </html>
             `,
             textContent: `
-PIX CONSTRUCCIÓN - SEGUIMIENTO
+FIX MANTENIMIENTO - SEGUIMIENTO
 
 ¡Hola {{prospectName}}!
 
-Hace {{daysSinceContact}} días nos contactaste para conocer más sobre nuestros servicios de construcción, y quería hacer un seguimiento personalizado.
+Hace {{daysSinceContact}} días nos contactaste para conocer más sobre nuestros servicios de mantenimiento, y quería hacer un seguimiento personalizado.
 
 RECORDATORIO DE NUESTRA CONVERSACIÓN:
-• Las necesidades específicas de tu proyecto
+• Las necesidades específicas de tu servicio
 • Los plazos que manejas
 • El presupuesto aproximado
 
@@ -314,14 +315,14 @@ Me gustaría saber si has tenido oportunidad de revisar la información que te c
 Estoy disponible para:
 • Una llamada de 15 minutos para resolver tus dudas
 • Enviar información más detallada sobre casos similares
-• Organizar una visita a una de nuestras obras en ejecución
+• Organizar una visita a una de nuestras operaciones en ejecución
 
-Quedo atento a tus comentarios. ¡Será un placer poder ayudarte con tu proyecto!
+Quedo atento a tus comentarios. ¡Será un placer poder ayudarte con tu servicio!
 
 Saludos cordiales,
 [Tu Nombre]
 Ejecutivo de Ventas
-Pix Construcción
+Fix Mantenimiento
 
 Este es un seguimiento personalizado de tu consulta.
 Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
@@ -341,7 +342,7 @@ Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Oferta Especial Pix Construcción</title>
+                    <title>Oferta Especial Fix Mantenimiento</title>
                     <style>
                         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
                         .container { max-width: 600px; margin: 0 auto; background: white; }
@@ -371,7 +372,7 @@ Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
                             <div class="offer-box">
                                 <h3 style="margin-top: 0; color: #92400e;">Descuento Exclusivo</h3>
                                 <div class="discount">{{discountPercentage}}%</div>
-                                <p style="margin: 0; font-size: 18px; color: #92400e;">en tu próximo proyecto de construcción</p>
+                                <p style="margin: 0; font-size: 18px; color: #92400e;">en tu próximo servicio de mantenimiento</p>
                                 <div class="validity">Válido hasta {{validUntil}}</div>
                             </div>
 
@@ -382,19 +383,19 @@ Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
 
                             <p>Esta oferta especial incluye:</p>
                             <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
-                                <li>✅ {{discountPercentage}}% de descuento en servicios de construcción</li>
-                                <li>✅ Estudio técnico gratuito</li>
+                                <li>✅ {{discountPercentage}}% de descuento en servicios de mantenimiento</li>
+                                <li>✅ Diagnóstico técnico gratuito</li>
                                 <li>✅ Presupuesto sin compromiso</li>
                                 <li>✅ Asesoría especializada durante 6 meses</li>
-                                <li>✅ Seguimiento personalizado del proyecto</li>
+                                <li>✅ Seguimiento personalizado del servicio</li>
                             </ul>
 
                             <div class="conditions">
                                 <h4 style="margin-top: 0; color: #374151;">Condiciones de la oferta:</h4>
                                 <ul style="text-align: left; margin: 10px 0;">
-                                    <li>Válido para proyectos nuevos</li>
-                                    <li>Mínimo de inversión: $50.000.000</li>
-                                    <li>Debe iniciar el proyecto dentro de 30 días</li>
+                                    <li>Válido para servicios nuevos</li>
+                                    <li>Mínimo de inversión: $500.000</li>
+                                    <li>Debe iniciar el servicio dentro de 30 días</li>
                                     <li>No acumulable con otras promociones</li>
                                 </ul>
                             </div>
@@ -410,8 +411,8 @@ Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
                         </div>
 
                         <div class="footer">
-                            <p><strong>Pix Construcción</strong></p>
-                            <p>Construyendo sueños, entregando resultados</p>
+                            <p><strong>Fix Mantenimiento</strong></p>
+                            <p>Manteniendo equipos, entregando resultados</p>
                             <p style="font-size: 12px; opacity: 0.8;">
                                 Esta oferta es exclusiva para {{prospectName}} de {{companyName}}.<br>
                                 Si no deseas recibir ofertas especiales, puedes <a href="#" style="color: white;">darte de baja aquí</a>.
@@ -422,14 +423,14 @@ Si ya no estás interesado, puedes darte de baja respondiendo con "BAJA".
                 </html>
             `,
             textContent: `
-PIX CONSTRUCCIÓN - OFERTA ESPECIAL
+FIX MANTENIMIENTO - OFERTA ESPECIAL
 
 ¡OFERTA LIMITADA PARA {{prospectName}} DE {{companyName}}!
 
 ¡Tenemos una oferta especial para ti!
 
 DESCUENTO EXCLUSIVO: {{discountPercentage}}%
-en tu próximo proyecto de construcción
+en tu próximo servicio de mantenimiento
 
 Válido hasta {{validUntil}}
 
@@ -437,23 +438,23 @@ Válido hasta {{validUntil}}
 Solo por ser uno de nuestros prospectos más destacados, queremos ofrecerte esta oportunidad única. Esta promoción está disponible únicamente por las próximas 48 horas.
 
 Esta oferta especial incluye:
-• {{discountPercentage}}% de descuento en servicios de construcción
-• Estudio técnico gratuito
+• {{discountPercentage}}% de descuento en servicios de mantenimiento
+• Diagnóstico técnico gratuito
 • Presupuesto sin compromiso
 • Asesoría especializada durante 6 meses
-• Seguimiento personalizado del proyecto
+• Seguimiento personalizado del servicio
 
 CONDICIONES DE LA OFERTA:
-• Válido para proyectos nuevos
-• Mínimo de inversión: $50.000.000
-• Debe iniciar el proyecto dentro de 30 días
+• Válido para servicios nuevos
+• Mínimo de inversión: $500.000
+• Debe iniciar el servicio dentro de 30 días
 • No acumulable con otras promociones
 
 ¿Tienes preguntas sobre esta oferta?
 Contáctanos al +56 9 1234 5678 o responde este email.
 
-Pix Construcción
-Construyendo sueños, entregando resultados
+Fix Mantenimiento
+Manteniendo equipos, entregando resultados
 
 Esta oferta es exclusiva para {{prospectName}} de {{companyName}}.
 Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "BAJA".
@@ -473,7 +474,7 @@ Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Caso de Éxito Pix Construcción</title>
+                    <title>Caso de Éxito Fix Mantenimiento</title>
                     <style>
                         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
                         .container { max-width: 600px; margin: 0 auto; background: white; }
@@ -509,7 +510,7 @@ Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "
 
                             <div class="case-study">
                                 <h3 style="margin-top: 0; color: #7c3aed;">{{projectName}}</h3>
-                                <p>Proyecto de construcción de edificio comercial de 5 pisos con áreas comunes y locales comerciales.</p>
+                                <p>Servicio de mantenimiento integral para planta industrial con equipos críticos y sistemas de producción continua.</p>
 
                                 <div class="stats">
                                     <div class="stat">
@@ -527,52 +528,52 @@ Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "
                                 </div>
 
                                 <h4 style="color: #7c3aed;">El Desafío</h4>
-                                <p>El cliente necesitaba construir un edificio comercial moderno en un plazo ajustado, con estrictos estándares de calidad y dentro de un presupuesto limitado. El terreno presentaba desafíos técnicos adicionales.</p>
+                                <p>El cliente necesitaba mantener equipos críticos en operación continua, con estrictos estándares de calidad y dentro de un presupuesto limitado. Los equipos presentaban desafíos técnicos adicionales por el desgaste continuo.</p>
 
                                 <h4 style="color: #7c3aed;">Nuestra Solución</h4>
                                 <ul>
-                                    <li>✅ Diseño personalizado adaptado a las necesidades específicas</li>
-                                    <li>✅ Utilización de tecnologías constructivas innovadoras</li>
-                                    <li>✅ Gestión eficiente de proveedores y subcontratistas</li>
-                                    <li>✅ Control de calidad en cada etapa del proyecto</li>
+                                    <li>✅ Diseño de programa de mantenimiento personalizado adaptado a las necesidades específicas</li>
+                                    <li>✅ Utilización de tecnologías de mantenimiento predictivo innovadoras</li>
+                                    <li>✅ Gestión eficiente de proveedores y técnicos especializados</li>
+                                    <li>✅ Control de calidad en cada etapa del servicio</li>
                                     <li>✅ Comunicación constante y transparente con el cliente</li>
                                 </ul>
                             </div>
 
                             <div class="comparison">
                                 <div class="comparison-item before">
-                                    <h4 style="margin-top: 0; color: #dc2626;">Antes de Pix</h4>
+                                    <h4 style="margin-top: 0; color: #dc2626;">Antes de Fix</h4>
                                     <ul style="text-align: left; margin: 10px 0;">
-                                        <li>Plazos no cumplidos</li>
-                                        <li>Costos descontrolados</li>
-                                        <li>Calidad inconsistente</li>
-                                        <li>Falta de comunicación</li>
+                                        <li>Paradas no programadas</li>
+                                        <li>Costos de reparación elevados</li>
+                                        <li>Disponibilidad inconsistente</li>
+                                        <li>Falta de predictibilidad</li>
                                     </ul>
                                 </div>
                                 <div class="comparison-item after">
-                                    <h4 style="margin-top: 0; color: #16a34a;">Después de Pix</h4>
+                                    <h4 style="margin-top: 0; color: #16a34a;">Después de Fix</h4>
                                     <ul style="text-align: left; margin: 10px 0;">
-                                        <li>Entrega en tiempo y forma</li>
-                                        <li>Presupuesto respetado</li>
-                                        <li>Calidad superior garantizada</li>
-                                        <li>Comunicación permanente</li>
+                                        <li>Operación continua garantizada</li>
+                                        <li>Costos optimizados</li>
+                                        <li>Disponibilidad superior</li>
+                                        <li>Mantenimiento predictivo</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="testimonial">
                                 <p style="margin: 0; font-style: italic; font-size: 16px;">
-                                    "Pix Construcción no solo cumplió con todos nuestros requerimientos, sino que superó nuestras expectativas. El proyecto se entregó antes de lo previsto y con una calidad excepcional. Recomiendo ampliamente sus servicios."
+                                    "Fix Mantenimiento no solo cumplió con todos nuestros requerimientos, sino que superó nuestras expectativas. Los equipos se mantuvieron operativos durante todo el proceso y con una calidad excepcional. Recomiendo ampliamente sus servicios."
                                 </p>
                                 <p style="margin: 10px 0 0 0; text-align: right; font-weight: bold;">
-                                    - María González, Gerente de Proyectos<br>
-                                    <span style="font-weight: normal; font-size: 14px;">Empresa Constructora XYZ</span>
+                                    - María González, Gerente de Operaciones<br>
+                                    <span style="font-weight: normal; font-size: 14px;">Empresa Industrial XYZ</span>
                                 </p>
                             </div>
 
-                            <p>Este caso demuestra cómo podemos ayudarte a transformar tu visión en realidad, cumpliendo con los más altos estándares de calidad y eficiencia.</p>
+                            <p>Este caso demuestra cómo podemos ayudarte a optimizar tus operaciones, cumpliendo con los más altos estándares de calidad y eficiencia.</p>
 
-                            <p>¿Te gustaría que preparemos un presupuesto personalizado para tu proyecto, considerando las lecciones aprendidas en casos similares?</p>
+                            <p>¿Te gustaría que preparemos un presupuesto personalizado para tu servicio, considerando las lecciones aprendidas en casos similares?</p>
 
                             <div style="text-align: center;">
                                 <a href="#" class="cta-button">Solicitar Presupuesto</a>
@@ -584,8 +585,8 @@ Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "
                         </div>
 
                         <div class="footer">
-                            <p><strong>Pix Construcción</strong></p>
-                            <p>Construyendo sueños, entregando resultados</p>
+                            <p><strong>Fix Mantenimiento</strong></p>
+                            <p>Manteniendo equipos, entregando resultados</p>
                             <p style="font-size: 12px; opacity: 0.8;">
                                 Compartimos casos de éxito para inspirarte.<br>
                                 Si no deseas recibir más casos, puedes <a href="#" style="color: white;">darte de baja aquí</a>.
@@ -596,48 +597,48 @@ Si no deseas recibir ofertas especiales, puedes darte de baja respondiendo con "
                 </html>
             `,
             textContent: `
-PIX CONSTRUCCIÓN - CASO DE ÉXITO
+FIX MANTENIMIENTO - CASO DE ÉXITO
 
 ¡Hola {{prospectName}}!
 
-Queríamos compartir contigo un caso de éxito reciente que creemos puede interesarte, ya que tiene similitudes con el proyecto que nos comentaste.
+Queríamos compartir contigo un caso de éxito reciente que creemos puede interesarte, ya que tiene similitudes con el servicio que nos comentaste.
 
-PROYECTO: {{projectName}}
-Proyecto de construcción de edificio comercial de 5 pisos con áreas comunes y locales comerciales.
+SERVICIO: {{projectName}}
+Servicio de mantenimiento integral para planta industrial con equipos críticos y sistemas de producción continua.
 
 ESTADÍSTICAS:
-• Valor del Proyecto: {{projectValue}}
+• Valor del Servicio: {{projectValue}}
 • Tiempo de Ejecución: {{completionTime}}
 • Satisfacción del Cliente: 98%
 
 EL DESAFÍO:
-El cliente necesitaba construir un edificio comercial moderno en un plazo ajustado, con estrictos estándares de calidad y dentro de un presupuesto limitado. El terreno presentaba desafíos técnicos adicionales.
+El cliente necesitaba mantener equipos críticos en operación continua, con estrictos estándares de calidad y dentro de un presupuesto limitado. Los equipos presentaban desafíos técnicos adicionales por el desgaste continuo.
 
 NUESTRA SOLUCIÓN:
-• Diseño personalizado adaptado a las necesidades específicas
-• Utilización de tecnologías constructivas innovadoras
-• Gestión eficiente de proveedores y subcontratistas
-• Control de calidad en cada etapa del proyecto
+• Diseño de programa de mantenimiento personalizado adaptado a las necesidades específicas
+• Utilización de tecnologías de mantenimiento predictivo innovadoras
+• Gestión eficiente de proveedores y técnicos especializados
+• Control de calidad en cada etapa del servicio
 • Comunicación constante y transparente con el cliente
 
 RESULTADOS:
-• Entrega en tiempo y forma
-• Presupuesto respetado
-• Calidad superior garantizada
+• Operación continua sin interrupciones
+• Costos de mantenimiento optimizados
+• Disponibilidad de equipos superior garantizada
 • Comunicación permanente
 
 TESTIMONIO:
-"Pix Construcción no solo cumplió con todos nuestros requerimientos, sino que superó nuestras expectativas. El proyecto se entregó antes de lo previsto y con una calidad excepcional. Recomiendo ampliamente sus servicios."
-- María González, Gerente de Proyectos, Empresa Constructora XYZ
+"Fix Mantenimiento no solo cumplió con todos nuestros requerimientos, sino que superó nuestras expectativas. Los equipos se mantuvieron operativos durante todo el proceso y con una calidad excepcional. Recomiendo ampliamente sus servicios."
+- María González, Gerente de Operaciones, Empresa Industrial XYZ
 
-Este caso demuestra cómo podemos ayudarte a transformar tu visión en realidad, cumpliendo con los más altos estándares de calidad y eficiencia.
+Este caso demuestra cómo podemos ayudarte a optimizar tus operaciones, cumpliendo con los más altos estándares de calidad y eficiencia.
 
-¿Te gustaría que preparemos un presupuesto personalizado para tu proyecto?
+¿Te gustaría que preparemos un presupuesto personalizado para tu servicio?
 
 Contáctanos al +56 9 1234 5678
 
-Pix Construcción
-Construyendo sueños, entregando resultados
+Fix Mantenimiento
+Manteniendo equipos, entregando resultados
 
 Si no deseas recibir más casos de éxito, responde con "BAJA".
             `

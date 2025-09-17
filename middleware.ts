@@ -48,7 +48,7 @@ export default withAuth(
             const health = {
                 status: 'ok',
                 timestamp: new Date().toISOString(),
-                service: 'pix',
+                service: 'fix',
                 port: process.env.PORT || '3000'
             }
 

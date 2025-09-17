@@ -297,7 +297,7 @@ export default function InvoiceFormModal({ isOpen, onClose, invoice, onSave, pro
     const defaultProviders = [
         'Proveedor Materiales SA',
         'Servicios Eléctricos Ltda',
-        'Construcciones Hermanos',
+        'Mantenimiento Hermanos',
         'Suministros Industriales',
         'Transportes Rápidos'
     ]
