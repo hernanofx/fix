@@ -1,0 +1,613 @@
+/* Dashboard-specific styles - Modern Professional Design */
+.dashboardPage {
+  /* Professional Color Palette - Limited to 5 colors total */
+  --dashboard-primary: #0f172a;
+  /* Slate-900 - Professional dark */
+  --dashboard-primary-light: #334155;
+  /* Slate-700 - Medium dark */
+  --dashboard-secondary: #0ea5e9;
+  /* Sky-500 - Professional blue */
+  --dashboard-accent: #10b981;
+  /* Emerald-500 - Success green */
+  --dashboard-warning: #f59e0b;
+  /* Amber-500 - Warning/accent */
+
+  /* Neutral Colors - Refined Gray Scale */
+  --dashboard-background: #fafafa;
+  /* Neutral-50 - Clean background */
+  --dashboard-card: #ffffff;
+  /* Pure white */
+  --dashboard-card-hover: #f8fafc;
+  /* Slate-50 - Subtle hover */
+  --dashboard-border: #e2e8f0;
+  /* Slate-200 - Clean borders */
+  --dashboard-border-light: #f1f5f9;
+  /* Slate-100 - Light borders */
+  --dashboard-text: #0f172a;
+  /* Slate-900 - Primary text */
+  --dashboard-text-muted: #64748b;
+  /* Slate-500 - Secondary text */
+  --dashboard-text-light: #94a3b8;
+  /* Slate-400 - Tertiary text */
+
+  /* Simplified chart colors using only our 5-color palette */
+  --dashboard-chart-1: #0ea5e9;
+  /* Primary blue */
+  --dashboard-chart-2: #10b981;
+  /* Success green */
+  --dashboard-chart-3: #f59e0b;
+  /* Warning amber */
+  --dashboard-chart-4: #334155;
+  /* Secondary dark */
+  --dashboard-chart-5: #0f172a;
+  /* Primary dark */
+
+  /* Enhanced animations and transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Spacing and sizing */
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 14px;
+  --border-radius-xl: 18px;
+
+  /* Professional shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  background-color: var(--dashboard-background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dashboard-border) transparent;
+}
+
+.dashboardPage::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboardPage::-webkit-scrollbar-track {
+  background: var(--dashboard-background);
+}
+
+.dashboardPage::-webkit-scrollbar-thumb {
+  background: var(--dashboard-border);
+  border-radius: 3px;
+}
+
+.dashboardPage::-webkit-scrollbar-thumb:hover {
+  background: var(--dashboard-text-muted);
+}
+
+/* Refined card styling with subtle gradients */
+.dashboardCard {
+  transition: all var(--transition-normal);
+  background: var(--dashboard-card);
+  border: 1px solid var(--dashboard-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboardCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--dashboard-secondary);
+}
+
+/* Professional button styling using consistent colors */
+.dashboardBtn {
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboardBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.dashboardBtn:active {
+  transform: translateY(0);
+}
+
+/* Consistent quick action button styling */
+.quickActionBtn {
+  background: var(--dashboard-card);
+  border: 1px solid var(--dashboard-border);
+  color: var(--dashboard-text);
+  transition: all var(--transition-normal);
+  border-radius: var(--border-radius-md);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.quickActionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--dashboard-secondary);
+  background: var(--dashboard-card-hover);
+}
+
+.quickActionBtn .iconWrapper {
+  padding: 0.5rem;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+/* Icon color variants using our professional palette */
+.quickActionBtn.primary .iconWrapper {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: var(--dashboard-secondary);
+}
+
+.quickActionBtn.success .iconWrapper {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--dashboard-accent);
+}
+
+.quickActionBtn.warning .iconWrapper {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--dashboard-warning);
+}
+
+.quickActionBtn.neutral .iconWrapper {
+  background-color: rgba(51, 65, 85, 0.1);
+  color: var(--dashboard-primary-light);
+}
+
+.quickActionBtn:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+/* Loading states */
+.dashboardLoading {
+  background: linear-gradient(90deg,
+      var(--dashboard-border-light) 25%,
+      var(--dashboard-card-hover) 50%,
+      var(--dashboard-border-light) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite ease-in-out;
+  border-radius: var(--border-radius-md);
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Chart enhancements */
+.chartContainer {
+  background: var(--dashboard-card);
+  border: 1px solid var(--dashboard-border-light);
+  border-radius: var(--border-radius-xl);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.chartContainer:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--dashboard-secondary);
+}
+
+/* Alert enhancements */
+.dashboardAlert {
+  border-left: 4px solid var(--dashboard-warning);
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.1);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+}
+
+.dashboardAlert:hover {
+  transform: translateX(2px);
+  box-shadow: var(--shadow-sm);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+/* Professional gradient backgrounds */
+.gradientPrimary {
+  background: linear-gradient(135deg, var(--dashboard-primary) 0%, var(--dashboard-primary-light) 100%);
+}
+
+.gradientSecondary {
+  background: linear-gradient(135deg, var(--dashboard-secondary) 0%, rgba(14, 165, 233, 0.9) 100%);
+}
+
+/* Minimalist welcome section styles */
+.welcomeSection {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcomeSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.welcomeContent {
+  position: relative;
+  z-index: 1;
+}
+
+.welcomeGreeting {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.welcomeSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.welcomeStats {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.welcomeButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.welcomeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.welcomeButtonPrimary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.welcomeButtonPrimary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.welcomeButtonSecondary {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.welcomeButtonSecondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.welcomeButtonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.welcomeButton:hover .welcomeButtonIcon {
+  transform: scale(1.1);
+}
+
+/* Enhanced focus states */
+.dashboardFocus:focus-visible {
+  outline: 2px solid var(--dashboard-secondary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+}
+
+/* Status indicators */
+.statusIndicator {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusIndicator::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dashboard-accent);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.statusIndicator.statusWarning::before {
+  background: var(--dashboard-warning);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .dashboardCard:hover {
+    transform: none;
+  }
+
+  .quickActionBtn:hover {
+    transform: none;
+  }
+
+  .welcomeButtons {
+    flex-direction: column;
+  }
+
+  .welcomeButton {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .welcomeSection {
+    padding: 1.5rem;
+  }
+
+  .welcomeGreeting {
+    font-size: 1.75rem;
+  }
+
+  .welcomeStats {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .welcomeSection {
+    padding: 1.25rem;
+  }
+
+  .welcomeGreeting {
+    font-size: 1.5rem;
+  }
+
+  .welcomeSubtitle {
+    font-size: 1rem;
+  }
+
+  .welcomeStats {
+    font-size: 0.75rem;
+  }
+
+  .welcomeButton {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.8125rem;
+  }
+}
+
+@media print {
+  .dashboardPage {
+    --dashboard-background: white;
+    --dashboard-text: black;
+    --dashboard-card: white;
+    --dashboard-border: #e2e8f0;
+  }
+
+  .dashboardCard {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+}
+
+/* Quick Actions Bar Styles */
+.quickActionsBar {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  transition: all 0.3s ease-in-out;
+}
+
+.quickActionsBar.collapsed {
+  transform: translate(1rem, -50%);
+}
+
+.quickActionsBar .barContent {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.quickActionsBar .barHeader {
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.quickActionsBar .actionGrid {
+  padding: 0.75rem;
+  max-width: 20rem;
+}
+
+.quickActionsBar .actionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.quickActionsBar .actionButton:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #0ea5e9;
+  background: #f8fafc;
+}
+
+.quickActionsBar .actionIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.quickActionsBar .actionButton:hover .actionIcon {
+  transform: scale(1.1);
+}
+
+.quickActionsBar .actionLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #374151;
+  text-align: center;
+  line-height: 1.25;
+  transition: color 0.2s ease-in-out;
+}
+
+.quickActionsBar .actionButton:hover .actionLabel {
+  color: #111827;
+}
+
+.quickActionsBar .barFooter {
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.quickActionsBar .collapseHandle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.quickActionsBar.collapsed .collapseHandle {
+  opacity: 1;
+}
+
+.quickActionsBar .collapseHandle button {
+  width: 3rem;
+  height: 3rem;
+  background: #0ea5e9;
+  border: none;
+  border-radius: 0.75rem 0 0 0.75rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.quickActionsBar .collapseHandle button:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+/* Tooltip styles */
+.quickActionsBar .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #111827;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.quickActionsBar .actionButton:hover .tooltip {
+  opacity: 1;
+}
+
+.quickActionsBar .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #111827;
+}
